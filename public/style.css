@@ -1,14 +1,55 @@
+html{
+  height: 100%;
+  box-sizing: inherit;
+}
+body{
+  margin: 0 !important;
+  min-height: 100%;
+}
+h1{
+  font-family: 'Lato', sans-serif;
+}
+
+  /*-----------------Landing Header Page --------------------*/
+.landing-header{
+  height: 100vh;
+  width: 100vw;
+  background: #74ccb8;
+}
 .hero-box{
   position: relative;
   width: 500px;
   top: 50%;
-  left: 50%;
+  left: 35%;
   transform: translate(-50%, -50%);
 }
 .hero-message{
   font-size: 3.5em;
+  line-height: 60px;
+  letter-spacing: 1px;
   font-family: 'Lato', sans-serif;
 }
-.disclaimer{
-  
+.buttons-box{
+  margin-top: 20px;
 }
+.hero-box a{
+  background: #333f7b;
+  padding: 10px 25px;
+  border-radius: 20px;
+  color: #fff;
+  font-family: "Lato";
+  margin-top: 20px;
+  font-size: 15px;
+}
+.disclaimer{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-right: 25px;
+}
+  /*-----------------Markets Page --------------------*/
+
+  .market-tagline {
+    color: grey;
+  }
