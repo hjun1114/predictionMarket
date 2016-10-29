@@ -10,8 +10,8 @@ app.get("/", function(req, res){
   res.render("landing");
 });
 
-app.get("/markets", function(req, res){
-  res.render("markets");
+app.get("/feedback", function(req, res){
+  res.render("feedback");
 });
 
 server.listen(process.env.PORT || 3000, function(){
