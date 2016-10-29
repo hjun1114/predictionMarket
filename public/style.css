@@ -24,7 +24,7 @@ p {
 }
   /*-----------------Landing Header Page --------------------*/
 .nav-bar{
-  height: 70px;
+
 }
 .nav-bar a{
   font-size: 14px;
@@ -45,22 +45,28 @@ p {
   display: inline-block;
   width: 20%;
 }
+.nav-bar .tab-container{
+  margin-right: 65px;
+  display: inline;
+}
+.nav-bar .tab-container a{
+  color: #fff;
+}
 .tab-container{
-  display: inline-block;
   width: 70%;
 }
 .buttons-container{
   display: inline-block;
   float: right;
 }
-.nav-bar .tab-container .buttons-container .header-colored{
+.nav-bar .buttons-container .header-colored{
   background: #009a67;
   padding: 5px 23px;
   color: #fff;
   border-radius: 5px;
   font-weight: lighter;
 }
-.nav-bar .tab-container .buttons-container .header-bordered{
+.nav-bar .buttons-container .header-bordered{
   border: 2px solid #009a67;
   padding: 3px 18px;
   border-radius: 5px;
@@ -68,9 +74,10 @@ p {
 }
 .landing-header{
   height: 70vh;
-  background: -webkit-linear-gradient(left, rgba(0,0,0,0.7), rgba(0,0,0,0.0)), url('images/bg-3.jpg');
-  background: -o-linear-gradient(left, rgba(0,0,0,0.7), rgba(0,0,0,0.0)), url('images/bg-3.jpg');
-  background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.0)), url('images/bg-3.jpg');
+
+  background: -webkit-linear-gradient(left, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/bg.jpg');
+  background: -o-linear-gradient(left, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/bg.jpg');
+  background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/bg.jpg');
   background-size: cover;
   background-position: center;
 }
