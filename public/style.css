@@ -26,6 +26,11 @@ p {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+.row-1{
+  max-width: 1180px;
+  display: block;
+  margin: 0 auto;
+}
   /*-----------------Landing Header Page --------------------*/
 .nav-bar{
 
@@ -80,6 +85,14 @@ a.logo-text{
 .nav-bar-inner{
   background: rgba(0,0,0,0.2)
 }
+.js--waypoint-1{
+  opacity: 0;
+}
+.js--waypoint-1.animated{
+  opacity: 1;
+  animation-delay: 2.5s;
+  animation-duration: 1.5s;
+}
 .landing-header{
   height: 85vh;
   background: -webkit-linear-gradient(left, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/bg.jpg');
@@ -131,9 +144,30 @@ a.logo-text{
 .intro-container h2{
   color: #000;
 }
-.intro-container p{
-  color: #000;
+.icon-container img{
+  width: 36%;
+}
+.js--waypoint-2{
+  opacity: 0;
+}
+.js--waypoint-2.animated{
+  opacity: 1;
+}
+.icon-container h2{
+  font-family: "Raleway";
+  font-size: 30px;
+  line-height: 37px;
+  margin-top: 20px;
+}
+.icon-container p{
   text-align: justify;
+  font-size: 18px;
+}
+.head-small{
+  padding-top: 9px;
+  width: 28% !important;
+  display: block;
+  margin: 0 auto;
 }
 .workflow{
   padding-top: 20px;
@@ -152,6 +186,7 @@ a.logo-text{
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+
 .tech{
   background: url("/images/tech.jpg");
   background-size: cover;
@@ -190,7 +225,7 @@ a.logo-text{
   text-align: center;
   transition: all 0.2s ease-in;
 }
-.market-button:hover .color-hover{
+.market-button:hover{
   background:#459693;
 }
 .disclaimer{
@@ -206,7 +241,104 @@ a.logo-text{
   .market-tagline {
     color: grey;
   }
+  /*-----------------Animation --------------------*/
 
+  .animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.typed-cursor {
+  display: none;
+}
 @media only screen and (min-width: 800px) and (max-width: 1025px){
   .hero-box{
     left: 30%;

@@ -10,6 +10,10 @@ app.get("/", function(req, res){
   res.render("landing");
 });
 
+app.get("/", function(req, res){
+  res.render("show");
+});
+
 app.get("/feedback", function(req, res){
   res.render("feedback");
 });
