@@ -10,7 +10,7 @@ app.get("/", function(req, res){
   res.render("landing");
 });
 
-app.get("/", function(req, res){
+app.get("/show", function(req, res){
   res.render("show");
 });
 

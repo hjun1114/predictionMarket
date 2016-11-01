@@ -228,6 +228,13 @@ a.logo-text{
 .market-button:hover{
   background:#459693;
 }
+.show-bg{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/show-bg.jpg");
+  background-attachment: fixed;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+}
 .disclaimer{
   position: absolute;
   right: 0;
@@ -236,11 +243,22 @@ a.logo-text{
   padding-right: 25px;
 }
 
-  /*-----------------Markets Page --------------------*/
+  /*-----------------Show Page --------------------*/
 
-  .market-tagline {
-    color: grey;
-  }
+.show-message-box{
+  position: relative;
+  width: 520px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.show-message-box h3, .show-message-box p{
+  color: #fff;
+  font-family: "Raleway";
+}
+.show-message-box h3 {
+  font-size: 20px;
+}
   /*-----------------Animation --------------------*/
 
   .animated {
