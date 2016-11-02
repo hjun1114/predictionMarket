@@ -15,12 +15,12 @@ html {
     font-weight: 300;
     text-rendering: optimizeLegibility;
 }
-h1{
-  font-family: 'Lato', sans-serif;
+h1, h2, h3, h4{
+  font-family: 'Raleway', sans-serif;
 }
 p {
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 .strip-padding{
   padding-left: 0 !important;
@@ -31,6 +31,7 @@ p {
   display: block;
   margin: 0 auto;
 }
+
   /*-----------------Landing Header Page --------------------*/
 .nav-bar{
 
@@ -228,13 +229,7 @@ a.logo-text{
 .market-button:hover{
   background:#459693;
 }
-.show-bg{
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/show-bg.jpg");
-  background-attachment: fixed;
-  height: 450px;
-  background-size: cover;
-  background-position: center;
-}
+
 .disclaimer{
   position: absolute;
   right: 0;
@@ -244,7 +239,13 @@ a.logo-text{
 }
 
   /*-----------------Show Page --------------------*/
-
+.show-bg{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/show-header2.jpg");
+  background-attachment: fixed;
+  height: 410px;
+  background-size: cover;
+  background-position: center;
+}
 .show-message-box{
   position: relative;
   width: 520px;
@@ -257,7 +258,64 @@ a.logo-text{
   font-family: "Raleway";
 }
 .show-message-box h3 {
-  font-size: 20px;
+  font-size: 26px;
+}
+.market-container {
+  padding: 80px 50px;
+  padding-bottom: 30px;
+}
+.market-container h3{
+  font-family: "Raleway";
+  font-size: 27px;
+}
+.buy-button, .sell-button {
+  display: inline-block;
+  text-align: center;
+  padding: 7px 30px;
+  width: 49%;
+  border-radius: 6px;
+  margin-top: 5px;
+  font-size: 15px;
+  color: #fff;
+  font-family: "Raleway";
+  transition: all 0.2s ease-in;
+}
+.buy-button {
+  background: #86bd4b;
+}
+.buy-button:hover {
+  background: #6a9839;
+  color: #fff;
+}
+.sell-button {
+  background: #bd764b;
+}
+.sell-button:hover {
+  background: #9a5f3b;
+  color: #fff;
+}
+.short-columns{
+  padding: 0px 11px;
+  border: 1px solid #d0d0d0;
+  width: 20%;
+  font-size: 16px;
+  font-family: "Raleway";
+}
+.followers img{
+  width: 100px;
+  border-radius: 100%;
+}
+.followers-container {
+  padding: 0px 30px;
+}
+.followers-container h3{
+  font-size: 26px;
+}
+.followers-box{
+  display: inline-block;
+}
+td {
+    border: 1px solid #d0d0d0;
 }
   /*-----------------Animation --------------------*/
 
