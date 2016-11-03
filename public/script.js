@@ -32,7 +32,7 @@ $(document).ready(function() {
 
   $(function(){
      $(".hero-message").typed({
-       strings: ["Virtual Prediction ^350 <br> Idea Future"],
+       strings: ["Choose. Learn. Predict. ^350 <br> You are the Oracle"],
        typeSpeed: 25
      });
  });

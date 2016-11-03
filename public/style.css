@@ -106,7 +106,7 @@ a.logo-text{
 }
 .hero-box{
   position: relative;
-  width: 520px;
+  width: 630px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -230,6 +230,7 @@ a.logo-text{
 }
 .market-button:hover{
   background:#459693;
+  color: #fff;
 }
 
 .disclaimer{
@@ -260,7 +261,7 @@ a.logo-text{
   font-family: "Raleway";
 }
 .show-message-box h3 {
-  font-size: 26px;
+  font-size: 40px;
 }
 
 .market-container {
