@@ -31,7 +31,9 @@ p {
   display: block;
   margin: 0 auto;
 }
-
+table {
+  margin-bottom: 0!important;
+}
   /*-----------------Landing Header Page --------------------*/
 .nav-bar{
 
@@ -262,12 +264,17 @@ a.logo-text{
 }
 .market-container {
   padding: 80px 50px;
-  padding-bottom: 30px;
+  padding-bottom:  0px;
 }
 .market-container h3{
   font-family: "Raleway";
-  font-size: 27px;
+  font-size: 25px;
 }
+.tabs-panel.is-active {
+  display: block;
+  padding: 9px !important;
+}
+
 .buy-button, .sell-button {
   display: inline-block;
   text-align: center;
@@ -281,14 +288,14 @@ a.logo-text{
   transition: all 0.2s ease-in;
 }
 .buy-button {
-  background: #86bd4b;
+  background: #4ac7c7;
 }
 .buy-button:hover {
   background: #6a9839;
   color: #fff;
 }
 .sell-button {
-  background: #bd764b;
+  background: #de5757;
 }
 .sell-button:hover {
   background: #9a5f3b;
@@ -305,8 +312,39 @@ a.logo-text{
   width: 100px;
   border-radius: 100%;
 }
+
+.followers p1{
+  text-align: center;
+}
+
+.followers .fa-angle-up{
+
+}
+.fa-angle-up:before{
+  color: #4ac7c7;
+  font-weight: bold;
+  position: relative;
+  padding-left: 5px;
+  font-size: 25px;
+}
+
+.fa-angle-down:before{
+  color: #de5757;
+  font-weight: bold;
+  position: relative;
+  padding-left: 5px;
+  font-size: 25px;
+}
+
+.fa-dollar:before{
+  font-size: 12px;
+}
+.followers .fa-arrow-circle-down {
+  color: red;
+}
+
 .followers-container {
-  padding: 0px 30px;
+  padding: 0px 55px;
 }
 .followers-container h3{
   font-size: 26px;
@@ -314,8 +352,20 @@ a.logo-text{
 .followers-box{
   display: inline-block;
 }
+.move-right{
+  float: right;
+}
+.tabs li a{
+  color: #000;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Raleway";
+}
 td {
     border: 1px solid #d0d0d0;
+}
+.tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
+    background: #70b7cc;
 }
   /*-----------------Animation --------------------*/
 
