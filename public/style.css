@@ -262,9 +262,13 @@ a.logo-text{
 .show-message-box h3 {
   font-size: 26px;
 }
+
 .market-container {
-  padding: 80px 50px;
+  padding: 0px 50px;
   padding-bottom:  0px;
+}
+.padding-top-1{
+  padding-top: 30px;
 }
 .market-container h3{
   font-family: "Raleway";
