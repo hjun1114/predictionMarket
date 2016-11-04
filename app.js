@@ -18,6 +18,12 @@ app.get("/feedback", function(req, res){
   res.render("feedback");
 });
 
+app.get("/login", function(req, res){
+  res.render("login");
+});
+
+
+
 server.listen(process.env.PORT || 3000, function(){
   console.log("Server has started");
 });

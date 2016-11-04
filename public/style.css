@@ -34,6 +34,10 @@ p {
 table {
   margin-bottom: 0!important;
 }
+.log-in-form {
+  border: 1px solid #cacaca;
+  padding: 1rem;
+  border-radius: 3px; }
   /*-----------------Landing Header Page --------------------*/
 .nav-bar{
 
@@ -142,7 +146,7 @@ a.logo-text{
 }
 .intro-container{
   background: #fff;
-  padding: 100px 0;
+  padding: 60px 0;
 }
 .intro-container h2{
   color: #000;
@@ -156,6 +160,9 @@ a.logo-text{
 .js--waypoint-2.animated{
   opacity: 1;
 }
+.icon-container {
+  padding: 10px;
+}
 .icon-container h2{
   font-family: "Raleway";
   font-size: 30px;
@@ -163,8 +170,8 @@ a.logo-text{
   margin-top: 20px;
 }
 .icon-container p{
-  text-align: justify;
-  font-size: 18px;
+  text-align: center;
+  font-size: 16px;
 }
 .head-small{
   padding-top: 9px;
@@ -265,15 +272,14 @@ a.logo-text{
 }
 
 .market-container {
-  padding: 0px 50px;
-  padding-bottom:  0px;
+  padding-top: 80px;
 }
 .padding-top-1{
   padding-top: 30px;
 }
 .market-container h3{
   font-family: "Raleway";
-  font-size: 25px;
+  font-size: 30px;
 }
 .tabs-panel.is-active {
   display: block;
@@ -284,9 +290,8 @@ a.logo-text{
   display: inline-block;
   text-align: center;
   padding: 7px 30px;
-  width: 49%;
-  border-radius: 6px;
-  margin-top: 5px;
+  width: 50%;
+  float: right;
   font-size: 15px;
   color: #fff;
   font-family: "Raleway";
@@ -296,14 +301,14 @@ a.logo-text{
   background: #4ac7c7;
 }
 .buy-button:hover {
-  background: #6a9839;
+  background: #217373;
   color: #fff;
 }
 .sell-button {
   background: #de5757;
 }
 .sell-button:hover {
-  background: #9a5f3b;
+  background: #942525;
   color: #fff;
 }
 .short-columns{
@@ -321,9 +326,9 @@ a.logo-text{
 .followers p1{
   text-align: center;
 }
-
-.followers .fa-angle-up{
-
+.bg-grey {
+  margin-top: 20px;
+  background: #f1f1f1;
 }
 .fa-angle-up:before{
   color: #4ac7c7;
@@ -332,7 +337,12 @@ a.logo-text{
   padding-left: 5px;
   font-size: 25px;
 }
-
+.tag-line{
+  display: inline-block;
+  position: relative;
+  top: -50px;
+  left: 20px;
+}
 .fa-angle-down:before{
   color: #de5757;
   font-weight: bold;
@@ -347,15 +357,25 @@ a.logo-text{
 .followers .fa-arrow-circle-down {
   color: red;
 }
+.followers-container{
 
-.followers-container {
-  padding: 0px 55px;
+}
+.followers-container-2{
+  float: right;
+}
+.followers-container-2  h3{
+  font-size: 26px;
 }
 .followers-container h3{
   font-size: 26px;
 }
+.followers {
+  padding: 20px;
+}
 .followers-box{
+  text-align: center;
   display: inline-block;
+  margin: 0px 10px;
 }
 .move-right{
   float: right;
@@ -372,101 +392,68 @@ td {
 .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
     background: #70b7cc;
 }
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+ul.tab li {
+  float: left;
+}
+
+ul.tab li a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 7px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: "Raleway";
+  font-size: 14px;
+}
+
+ul.tab li a:hover {background-color: #ddd;}
+
+ul.tab li a:focus, .active {background-color: #ccc;}
+
+.tabcontent {
+    display: none;
+    padding: 15px 20px;
+    /*border: 1px solid #ccc;*/
+    text-align: justify;
+    border-top: none;
+}
+
+div#info-2 {
+  display: block !important;
+}
+.js--waypoint-right-1, .js--waypoint-right-2, .js--waypoint-left{
+  opacity: 0;
+}
+.js--waypoint-left.animated {
+  animation-duration: 1.5s;
+  opacity: 1;
+}
+.js--waypoint-right-1.animated {
+  opacity: 1;
+  animation-duration: 1.5s;
+}
+.js--waypoint-right-2.animated {
+  opacity: 1;
+  animation-duration: 1.5s;
+}
   /*-----------------Animation --------------------*/
 
-  .animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-}
-
-@-webkit-keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-.fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 50%, 0);
-    transform: translate3d(0, 50%, 0);
+  .tabcontent {
+      -webkit-animation: fadeEffect 1s;
+      animation: fadeEffect 1s; /* Fading effect takes 1 second */
   }
 
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-}
-
-@-webkit-keyframes fadeInUpBig {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 2000px, 0);
-    transform: translate3d(0, 2000px, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
 .typed-cursor {
   display: none;
 }
